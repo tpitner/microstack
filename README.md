@@ -21,5 +21,13 @@ Stack-based concatenative prefix programming language
 ## Builtins
 - **concat** [1 2 3] [4 5 6 7] -> [1 2 3 4 5 6 7] 
 - **cons** 3 [4 5] -> [3 4 5]
+
+### General combinators 
 - **map** [* dup] [1 2 3 4] -> [1 4 9 16]
 - **do** [* dup] -> computes sqr from top of stack
+
+### Conditionals and loops
+- **if** [gte0] [+ 1]
+- **ifte** [gte0] [+ 1] [- 1]
+- **while** [gte0] [- 1]
+- **repeat** 5 [* 2]
