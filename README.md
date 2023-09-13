@@ -33,4 +33,17 @@ Stack-based concatenative prefix programming language
 - **if** [gte0] [+ 1]
 - **ifte** [gte0] [+ 1] [- 1]
 - **while** [gte0] [- 1]
-- **repeat** 5 [* 2]
+- **times** n quotation - executes the _quotation_ _n_-times
+
+## Predicates
+- leave boolean on the stack based on the condition
+
+### Type predicates
+- type checking: boolean    char    int    double    string
+
+### Quotations
+- predicates for numbers: odd    even    positive    negative
+- predicates for aggregates: in    has empty
+- predicates for strings: empty
+- **some** quotation - true iff some item(s) in quotation evaluate to true
+- **all** quotation - true iff all items in quotation evaluate to true
