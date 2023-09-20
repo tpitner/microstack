@@ -56,3 +56,17 @@ Examples:
 - predicates for strings: empty
 - **some** quotation - true iff some item(s) in quotation evaluate to true
 - **all** quotation - true iff all items in quotation evaluate to true
+
+## Complete list of builtin words
+- I/O: PRINT, PRINTLN, INPUT
+- general control: CLEAR
+- execute quoted: DO
+- print and empty stack: DUMP
+- swap tos/nos: SWAP, duplicate tos: DUP, duplicate tos+nos: DUP2
+- arithmetic: INC, DEC, ADD, SUB, MUL, DIV, MOD, POWER
+- quit program: BYE
+- loop n-times: TIMES
+- string(s) SPLIT, CONCAT
+- pick n-th from stack: PICK 
+- comparison: GT, LT, GT0,  LT0, EQUAL, NOTEQUAL, LTE, GTE, LTE0, GTE0,
+- logical: AND, OR, NOT
