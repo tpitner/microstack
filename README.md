@@ -70,3 +70,31 @@ Examples:
 - pick n-th from stack: PICK 
 - comparison: GT, LT, GT0,  LT0, EQUAL, NOTEQUAL, LTE, GTE, LTE0, GTE0,
 - logical: AND, OR, NOT
+
+# Legacy of other stack languages
+## Factor
+### Builtins
+- `drop ( x -- )`
+- `dup ( x -- x x )`
+- `over ( x y -- x y x )`
+- `swap ( x y -- y x )`
+
+- `2 even? [ "OK" ] [ "Cosmic rays detected" ] if`
+- `{ "veni" "vidi" "vici" } [ print ] each`
+- `{ 1 2 3 4 } 0 [ + ] reduce`
+
+```
+: tail-factorial ( accumulator n -- n! )
+dup 0 =
+  [ drop ]
+  [ [ * ] [ 1 - ] bi tail-factorial ]
+  if ;
+: factorial ( n -- n! )
+  1 swap (factorial) ;
+```
+
+## Joy
+
+## Forth
+
+
